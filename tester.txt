@@ -1,0 +1,5 @@
+Python is a great programming language.
+Many developers use Python for data science.
+This line does not contain the keyword.
+Learning to handle files in Python is useful.
+Keyword matching is case-sensitive in Python.
