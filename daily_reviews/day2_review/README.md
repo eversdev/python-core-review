@@ -13,3 +13,18 @@ Edit
 data = [("Tom", 34), ("Dick", 28), ("Harry", 40)]
 sorted_data = sorted(data, key=lambda x: x[1], reverse=True)
 print(sorted_data)
+
+
+
+Square Root with Random Number & Error Handling
+This script generates a random float between 0 and 10, then calculates its square root using Python’s math and random modules. It handles errors like negative numbers or wrong types by returning a helpful message.
+
+How to Use
+Run the script — it prints the square root of a random number. To test errors, manually set num (e.g., num = -9 or num = "hello").
+
+Example
+num = -9  
+print(safe_sqrt(num))  # Output: Negative number
+
+Requirements
+Standard library: Math and Random.

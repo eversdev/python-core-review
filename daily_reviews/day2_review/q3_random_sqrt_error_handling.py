@@ -1,25 +1,21 @@
-#testing to see if the modules i improted work as expcted
 import math as m
 import random as rnd
 
-#testing to see if the modules i improted work as expcted
-#print(m.sqrt(81))
-#print(rnd.uniform(0,10))
 
-
+#generate random float beween 0 and 10
 num = rnd.uniform(0,10)
 
 def safe_sqrt(num):
-    #num = -9
-    #num = "Hi"
-    #num = None
+    """Calculates the sqrt of num.
+        returns the sqrt if valid,
+        otherwise reutreturns an error msg str."""
     try:
         sq_root = m.sqrt(num)
-        print(sq_root)
+        return sq_root
     except ValueError:
-        print("Negative number")
+        return "Negative number"
     except TypeError:
-        print("Wrong type!")
+        return "Wrong type!"
 
 
-safe_sqrt(num)
+print(safe_sqrt(num))
