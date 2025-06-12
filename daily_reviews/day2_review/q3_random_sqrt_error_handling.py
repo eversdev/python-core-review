@@ -1,3 +1,4 @@
+#testing to see if the modules i improted work as expcted
 import math as m
 import random as rnd
 
@@ -6,17 +7,19 @@ import random as rnd
 #print(rnd.uniform(0,10))
 
 
+num = rnd.uniform(0,10)
 
-#num = rnd.uniform(0,10)
-#num = -9
-#num = "Hi"
-num = None
-try:
-    sq_root = m.sqrt(num)
-    print(sq_root)
-except ValueError:
-    print("Negative number")
-except TypeError:
-    print("Wrong type!")
+def safe_sqrt(num):
+    #num = -9
+    #num = "Hi"
+    #num = None
+    try:
+        sq_root = m.sqrt(num)
+        print(sq_root)
+    except ValueError:
+        print("Negative number")
+    except TypeError:
+        print("Wrong type!")
 
 
+safe_sqrt(num)
