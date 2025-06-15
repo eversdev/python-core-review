@@ -12,3 +12,32 @@ Run the script in the same folder where you want data.json to be or where it alr
 
 
 
+
+
+
+
+
+# Circle Area Calculator
+
+This is a small Python program that creates a Circle class. The class can calculate the area of a circle when you give it a radius.
+
+## What it does
+
+- Stores the radius of a circle
+- Calculates the area using the math module for π (pi)
+- Prints the area with 2 decimal places
+- Shows a simple name when you print the circle object
+
+## How to use
+
+1. Import the Circle class in your Python file.
+2. Create a Circle object by giving it a radius.
+3. Call the `area()` method to get the area of the circle.
+
+Example:
+
+```python
+from circle import Circle
+
+my_circle = Circle(5)
+print(my_circle.area())
