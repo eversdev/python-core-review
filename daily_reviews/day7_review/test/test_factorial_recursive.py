@@ -6,7 +6,7 @@ def test_factorial_zero_returns_one():
 
 
 def test_factorial_one_returns_one():
-    pass
+    assert factor_recur(1) == 1
 
 
 def test_factorial_float_raises_error():
