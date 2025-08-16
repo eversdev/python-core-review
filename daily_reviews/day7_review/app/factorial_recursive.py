@@ -1,13 +1,18 @@
 def factor_recur(n):
+    """
+    Calculate the factorial of a non-negative integer using recursion.
 
-    if not isinstance(n, int):
-        raise ValueError("Cannot enter a float value")
+    Parameters:
+    n (int): A non-negative integer whose factorial is to be calculated.
 
-    if n < 0:
-        raise ValueError("Cannot calculate factorial of negative numbers")
+    Returns:
+    int: Factorial of the input integer.
 
-    if isinstance(n, str):
-        raise ValueError("Cannot enter non-numeric value")
+    Raises:
+    ValueError: If `n` is not a non-negative integer.
+    """
+    if not isinstance(n, int) or n < 0:
+        raise ValueError("Input must be non-negative integer")
 
     if n == 0 or n == 1:
         return 1
