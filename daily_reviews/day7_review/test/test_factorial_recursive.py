@@ -15,5 +15,16 @@ def test_factorial_float_raises_error():
     with pytest.raises(ValueError):
         factor_recur(1.5)
 
+
+def test_factorial_recursive_case():
+    assert factor_recur(5) == 120
+
+
+def test_factorial_negative_value():
+    with pytest.raises(ValueError):
+        factor_recur(-1)
+
+
 def test_factorial_non_numeric_raises_error():
-    pass
+    with pytest.raises(ValueError):
+        factor_recur("Three")
