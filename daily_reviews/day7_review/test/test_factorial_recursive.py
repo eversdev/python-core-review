@@ -1,5 +1,7 @@
 from app.factorial_recursive import factor_recur
 
+import pytest
+
 
 def test_factorial_zero_returns_one():
     assert factor_recur(0) == 1
@@ -10,8 +12,8 @@ def test_factorial_one_returns_one():
 
 
 def test_factorial_float_raises_error():
-    pass
-
+    with pytest.raises(ValueError):
+        factor_recur(1.5)
 
 def test_factorial_non_numeric_raises_error():
     pass
